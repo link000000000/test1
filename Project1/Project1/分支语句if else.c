@@ -1,5 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-#include <stdio.h>
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include <stdio.h>
 
 //int main()
 //{
@@ -192,7 +192,7 @@
 //	scanf("%s", password);          //scanf内的password为什么没取地址？
 //								//因为password是一个数组 数组数组名就是个地址
 //	//清理缓冲区
-//	getchar();   //处理\n ，仅处理一个字符
+///*	getchar();*/   //处理\n ，仅处理一个字符
 //
 //	int tmp = 0;
 //	while ((tmp = getchar()) != '\n')      //处理\n，处理缓冲区内容

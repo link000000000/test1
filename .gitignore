@@ -1,0 +1,16 @@
+*.tlog
+*.db
+*.sln
+*.vcxproj
+*.filters
+*.recipe
+*.enc
+*.idb
+*.db-shm
+*.db-wal
+*.json
+*.targets
+*.props
+*.vstheme
+*.vsixmanifest
+*.csproj

@@ -1,5 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
 
 
 //int amount[] = { 1,5,10,25,50 };
@@ -112,35 +112,35 @@
 //	return 0;
 //}
 
-int max(int a[], int len)
-{
-	int maxid = 0;
-	for (int i = 0; i < len; i++)
-	{
-		if (a[i] > a[maxid])
-		{
-			maxid = i;
-		}
-	}
-	return maxid;
-}
-int main()
-{
-	int a[] = { 2,45,6,12,87,34,90,24,23,11,65 };
-	int len = sizeof(a) / sizeof(a[0]);
-	int maxid = max(a, sizeof(a) / sizeof(a[0]));
-	//swap a[maxid],a[len-1]
-	for (int i = len - 1;i>0; i--)
-	{                                  //Selective Sort
-		int maxid = max(a, i+1);
-		int t = a[maxid];
-		a[maxid] = a[i];
-		a[i] = t;
-
-	}
-	for (int i = 0; i < len; i++)
-	{
-		printf("%d  ", a[i]);
-	}
-	return 0;
-}
+//int max(int a[], int len)
+//{
+//	int maxid = 0;
+//	for (int i = 0; i < len; i++)
+//	{
+//		if (a[i] > a[maxid])
+//		{
+//			maxid = i;
+//		}
+//	}
+//	return maxid;
+//}
+//int main()
+//{
+//	int a[] = { 2,45,6,12,87,34,90,24,23,11,65 };
+//	int len = sizeof(a) / sizeof(a[0]);
+//	int maxid = max(a, sizeof(a) / sizeof(a[0]));
+//	//swap a[maxid],a[len-1]
+//	for (int i = len - 1;i>0; i--)
+//	{                                  //Selective Sort
+//		int maxid = max(a, i+1);
+//		int t = a[maxid];
+//		a[maxid] = a[i];
+//		a[i] = t;
+//
+//	}
+//	for (int i = 0; i < len; i++)
+//	{
+//		printf("%d  ", a[i]);
+//	}
+//	return 0;
+//}

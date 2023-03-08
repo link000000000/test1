@@ -3,6 +3,7 @@
 #include<string>
 #include<vector>
 #include<set>
+#include<map>
 
 using namespace std;
 
@@ -173,25 +174,47 @@ using namespace std;
 
 //set(集合，他里面的元素各不相同，且元素会按照从小到大排序)
 
+//int main()
+//{
+//	set<int>s;   //跟vector不同，set后面s不能添加任何内容，因为集合元素互异
+//	//插入：
+//	s.insert(1);
+//	s.insert(2);
+//	s.insert(3);
+//	//遍历：
+//	for (auto p = s.begin(); p != s.end(); p++)      //s.end是最后一个元素的下一个位置 '\0'
+//	{
+//		cout << *p << "   ";
+//	}
+//	//查找：
+//	cout << (s.find(2) != s.end()) << endl;  //s.find是否等于s.end
+//	cout << (s.find(4) != s.end()) << endl;  //相等返回0 不相等返回1 相当于bool值
+//
+//	//删除：
+//	s.erase(1);   //将1给删除掉
+//	cout << (s.find(1) != s.end()) << endl;  //被删除掉后1不存在bool返回0
+//	return 0;
+//}
+//
+
+
+
+//map 键值对
+
+//它会自动将所有键值对按照键从小到大排序
+//map<string,int>m;
+
+
 int main()
 {
-	set<int>s;   //跟vector不同，set后面s不能添加任何内容，因为集合元素互异
-	//插入：
-	s.insert(1);
-	s.insert(2);
-	s.insert(3);
-	//遍历：
-	for (auto p = s.begin(); p != s.end(); p++)      //s.end是最后一个元素的下一个位置 '\0'
-	{
-		cout << *p << "   ";
-	}
-	//查找：
-	cout << (s.find(2) != s.end()) << endl;  //s.find是否等于s.end
-	cout << (s.find(4) != s.end()) << endl;  //相等返回0 不相等返回1 相当于bool值
+	map<string, int>m;      //键是字符串类型，值是整形类型
+	//1:添加
+	m["hello"] = 2;
+	m["world"] = 3;
 
-	//删除：
-	s.erase(1);   //将1给删除掉
-	cout << (s.find(1) != s.end()) << endl;  //被删除掉后1不存在bool返回0
+	cout << "hello:" << m["hello"] << endl;
+
+
+
 	return 0;
 }
-
